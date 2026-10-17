@@ -1,0 +1,60 @@
+@font-face{font-family:"Lilita One";src:url(assets/lilita-one.woff) format("woff");font-display:swap}
+:root{--bg:#0c0818;--panel:#1d1838;--panel-dark:#120e24;--border:#3d3566;--gold:#ffd25a;--gold-dark:#b8862c;--text:#f4f0ff;--muted:#9b93b8;--link:#ffe08f}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg) linear-gradient(180deg,#151036 0,var(--bg) 480px) no-repeat;color:var(--text);
+ font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif}
+a{color:var(--link)}
+a:hover{color:var(--gold)}
+h1,h2,h3,.brand,.button{font-family:"Lilita One",system-ui,sans-serif;font-weight:400;letter-spacing:.01em}
+h1{color:var(--gold);font-size:2rem;line-height:1.15;margin:.2em 0 .4em;text-shadow:0 2px 0 #000}
+h2{color:var(--gold);font-size:1.4rem;margin:1.8em 0 .5em}
+h3{color:var(--text);font-size:1.15rem;margin:1.4em 0 .4em}
+header.top{background:var(--panel-dark);border-bottom:2px solid var(--gold-dark)}
+header.top .bar{max-width:880px;margin:0 auto;padding:.6rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1rem}
+.brand{display:flex;align-items:center;gap:.5rem;color:var(--gold);text-decoration:none;font-size:1.2rem;margin-right:auto}
+.brand img{width:34px;height:34px;border-radius:8px}
+nav.main{display:flex;flex-wrap:wrap;gap:.2rem .9rem;font-size:.95rem}
+nav.main a{color:var(--text);text-decoration:none}
+nav.main a[aria-current]{color:var(--gold)}
+main{max-width:880px;margin:0 auto;padding:1rem 1rem 2.5rem}
+.langs{margin:.3rem 0 1rem;font-size:.9rem;color:var(--muted)}
+.langs a,.langs strong{display:inline-block;margin:.15rem .2rem;padding:.1rem .55rem;border:1px solid var(--border);border-radius:999px;text-decoration:none;color:var(--text)}
+.langs strong{border-color:var(--gold);color:var(--gold);font-weight:600}
+.doc{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:1rem 1.2rem 1.4rem}
+.doc>p:first-of-type{color:var(--muted)}
+.doc code{background:var(--panel-dark);padding:.05em .35em;border-radius:5px;font-size:.88em;word-break:break-all}
+.doc hr{border:0;border-top:1px solid var(--border);margin:2rem 0 1rem}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.93rem}
+th,td{border:1px solid var(--border);padding:.5rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--panel-dark);color:var(--gold)}
+@media (max-width:640px){
+ h1{font-size:1.6rem}
+ .doc{padding:.8rem .9rem 1.1rem}
+ table,thead,tbody,tr,td{display:block;width:100%}
+ thead{display:none}
+ tr{border:1px solid var(--border);border-radius:10px;margin:0 0 .8rem;background:var(--panel-dark);overflow:hidden}
+ td{border:0;border-top:1px solid var(--border);padding:.45rem .7rem}
+ td:first-child{border-top:0;font-weight:600}
+ td[data-label]:not(:first-child)::before{content:attr(data-label);display:block;color:var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+}
+.hero{position:relative;margin:0 -1rem 1.2rem;overflow:hidden;border-bottom:2px solid var(--gold-dark)}
+.hero img{display:block;width:100%;height:auto;max-height:440px;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(transparent,var(--bg))}
+@media (min-width:881px){.hero{margin:1rem 0 1.4rem;border:2px solid var(--gold-dark);border-radius:16px}}
+.intro{font-size:1.08rem}
+.features{padding-left:1.2rem}
+.features li{margin:.3rem 0}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;margin:1.4rem 0}
+.button{display:inline-block;padding:.75rem 1.5rem;border-radius:12px;border:2px solid #fff3c4;color:#2a1a00;text-decoration:none;font-size:1.25rem;
+ background:linear-gradient(180deg,#ffe48a,var(--gold) 45%,var(--gold-dark));box-shadow:0 4px 0 #6b4a12,0 6px 18px rgba(0,0,0,.45)}
+.button:hover{color:#000;filter:brightness(1.06)}
+.note{color:var(--muted);font-size:.92rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem;margin:1.5rem 0}
+.card{display:block;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:.9rem 1rem;text-decoration:none;color:var(--text)}
+.card strong{display:block;font-family:"Lilita One",system-ui,sans-serif;font-weight:400;color:var(--gold);font-size:1.1rem}
+.card:hover{border-color:var(--gold-dark)}
+.steps li{margin:.35rem 0}
+footer{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+footer .bar{max-width:880px;margin:0 auto;padding:1rem;display:flex;flex-wrap:wrap;gap:.3rem 1.2rem}
+footer a{color:var(--muted)}
