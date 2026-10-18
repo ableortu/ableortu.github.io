@@ -49,6 +49,8 @@ th{background:var(--panel-dark);color:var(--gold)}
 .button{display:inline-block;padding:.75rem 1.5rem;border-radius:12px;border:2px solid #fff3c4;color:#2a1a00;text-decoration:none;font-size:1.25rem;
  background:linear-gradient(180deg,#ffe48a,var(--gold) 45%,var(--gold-dark));box-shadow:0 4px 0 #6b4a12,0 6px 18px rgba(0,0,0,.45)}
 .button:hover{color:#000;filter:brightness(1.06)}
+.button.discord{border-color:#c9cdff;color:#fff;background:linear-gradient(180deg,#8891ff,#5865f2 45%,#3b44c4);box-shadow:0 4px 0 #262c80,0 6px 18px rgba(0,0,0,.45)}
+.button.discord:hover{color:#fff}
 .note{color:var(--muted);font-size:.92rem}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem;margin:1.5rem 0}
 .card{display:block;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:.9rem 1rem;text-decoration:none;color:var(--text)}
